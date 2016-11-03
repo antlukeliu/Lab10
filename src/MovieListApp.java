@@ -45,8 +45,8 @@ public class MovieListApp {
 		movieL.add(new Movie("Conjuring", "horror"));
 		movieL.add(new Movie("Wall-E", "animated"));
 		movieL.add(new Movie("Up", "animated"));
-		movieL.add(new Movie("Star Wars", "scifi"));
-		movieL.add(new Movie("E.T.", "scifi"));
+		movieL.add(new Movie("Star Trek", "scifi"));
+		movieL.add(new Movie("Aliens vs Predator", "scifi"));
 		movieL.add(new Movie ("Paranormal Activity", "horror"));
 		movieL.add(new Movie("100 Days of Summer", "drama"));
 		movieL.add(new Movie("Finding Nemo", "animated"));
