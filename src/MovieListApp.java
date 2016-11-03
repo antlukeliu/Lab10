@@ -10,10 +10,14 @@ public class MovieListApp {
 		MovieValid val = new MovieValid();
 		
 		do{
+			//Creates the Movie arraylist 
 			ArrayList<Movie> MovieL = getMovieIO();
+			
+			//Arraylist to hold the the titles a user has selected
 			ArrayList<String> sortedMovie = new ArrayList<String>();
 			String input = val.Validate();
 			
+			//fills arraylist based on user input
 			for(Movie m: MovieL){
 				if(m.getCategory().equalsIgnoreCase(input)){
 					sortedMovie.add(m.getTitle());}
@@ -21,6 +25,7 @@ public class MovieListApp {
 			
 			Collections.sort(sortedMovie);
 			
+			//prints out titles of the genre the user selected
 			for (String d: sortedMovie){
 				System.out.println(d.toString());}
 			
@@ -31,6 +36,7 @@ public class MovieListApp {
 		val.exitting(cont);
 	}
 	
+	//method to create the arraylist
 	public static ArrayList<Movie> getMovieIO(){
 		
 		ArrayList<Movie> movieL = new ArrayList<Movie>();

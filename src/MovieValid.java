@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class MovieValid {
 	
+	//validates input
 	public String Validate(){
 		
 		Scanner sc = new Scanner(System.in);
@@ -27,6 +28,8 @@ public class MovieValid {
         }
 		return category[(i-1)];
 	}
+	
+	//validates char
 	public char YesOrNo(){
 		Scanner sc = new Scanner(System.in);
 		
@@ -47,6 +50,7 @@ public class MovieValid {
 		}
 		return response.toLowerCase().charAt(0);
 	}
+	
 	//Breaking while loop if false 
 	public boolean loopingAgain(char response){
 		if (response == 'y'){
